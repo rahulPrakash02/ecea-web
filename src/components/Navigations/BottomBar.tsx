@@ -21,9 +21,11 @@ const BottomBarContent = styled('ul')(({ theme }) => ({
 }));
 
 const BottomBar = () => (
-  <BottomBarContent>
+  <div style = {{maxWidth: 650px}}>
+    <BottomBarContent>
     {navigations.map((nav: NavitemProps) => <NavBarItem key={nav.label} {...nav} />)}
-  </BottomBarContent>
+    </BottomBarContent>
+  </div>
 );
 
 export default BottomBar;
