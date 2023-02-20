@@ -21,7 +21,7 @@ const BottomBarContent = styled('ul')(({ theme }) => ({
 }));
 
 const BottomBar = () => (
-  <div style = {{maxWidth: 767px}}>
+  <div style = "max-width: 767px">
     <BottomBarContent>
     {navigations.map((nav: NavitemProps) => <NavBarItem key={nav.label} {...nav} />)}
     </BottomBarContent>
